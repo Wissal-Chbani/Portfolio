@@ -1,0 +1,208 @@
+body{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(36,0,28,1) 84%, rgb(44, 0, 34) 100%);
+}
+
+.transparent-navbar {
+    background-color: transparent !important;
+}
+
+#homebutton{
+    color: white;
+}
+
+#homebutton a:hover,
+#homebutton a:focus,
+#homebutton a:active{
+    color: #ed89c5;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.navbar a,
+#homebutton {
+    color: white;
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a:focus,
+.navbar a:active {
+    color: #ed89c5;
+}
+
+.navbar a::after {
+    padding: 0;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #c82586;
+    border-radius: 40px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+}
+
+.navbar a:hover::after,
+.navbar a:focus::after,
+.navbar a:active::after {
+    transform-origin: left; 
+    transform: scaleX(1); 
+}
+
+
+/*-------------------------------------------------------*/
+
+
+
+.image-with-shadow{
+    display: block;
+    position: relative;
+    filter: drop-shadow(0px 0px 15px #c82586);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+/*---------------------------------------------*/
+
+.circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: black;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999; /* so that it stays on top of all other elements */
+}
+/*------------------------------------------------------------------*/
+
+.aboutme{
+    font-family: monospace;
+}
+
+.img-container{
+    width: 400px;
+    padding: 0;
+    margin: 0;
+}
+
+.text-container{
+    padding: 0;
+}
+
+.text-container p{
+    margin: 60px auto auto 60px;
+}
+/*----------------------------------------------------------------------------*/
+
+
+.interests-title {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #fff;
+  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 25px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+}
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+/*------------------------------------------------------------------------------*/
+
+.interests-style p{
+  font-family: monospace;
+}
+
+.interests i{
+  margin-right: 10px;
+  color: pink;
+}
+
+.interests-style p{
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  border: 1px solid pink;
+  box-shadow: 0 0 10px ;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.interests-style p:hover {
+  background-color: #c8258728;
+  transform: translateY(-5px); 
+  box-shadow: 0 0 10px #c82586;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
